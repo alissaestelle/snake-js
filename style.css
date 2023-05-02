@@ -1,0 +1,59 @@
+/*
+Color Code Refs
+
+Coral: #FF7F50
+Lavender: #E6E6FA
+Marshmallow: #F9F5EC
+Seashell: #FFF5EE
+Thistle: #D8BFD8
+Wisteria: #BDB5D5
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #bdb5d5;
+}
+
+/* main {
+  background-color: #f9f5ec;
+  border-radius: 30px;
+} */
+
+.grid {
+  width: 75vmin;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+
+  background-color: rgb(216, 191, 216);
+  border: 1.5px solid #f9f5ec;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.grid:after {
+  display: inline-block;
+
+  content: '';
+  padding-bottom: 100%;
+}
+
+.snake {
+  background-color: rgb(255, 245, 238, 0.75);
+  border: 0.25vmin solid #fff5ee;
+}
+
+.food {
+  background-color: rgb(255, 127, 80, 0.75);
+  border: 0.25vmin solid #ff7f50;
+}

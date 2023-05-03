@@ -24,11 +24,11 @@ body {
 }
 
 /* main {
-  background-color: #f9f5ec;
-  border-radius: 30px;
+  width: 600px;
+  margin: 0 auto;
 } */
 
-.grid {
+#grid {
   width: 75vmin;
 
   display: grid;
@@ -41,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-.grid:after {
+#grid:after {
   display: inline-block;
 
   content: '';
